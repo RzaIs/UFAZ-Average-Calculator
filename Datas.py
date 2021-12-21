@@ -39,16 +39,16 @@ def get_CE_boxes(win : tk.Tk):
         Box(win, "Exper chem PW", 1.0),
         Box(win, "Exper chem Report", 1.0),
         Box(win, "Distillation", 2.0),
-        Box(win, "Operation on solids CC1", 2.0),
-        Box(win, "Operation on solids CC2", 2.0),
+        Box(win, "Opt on solids CC1", 2.0),
+        Box(win, "Opt on solids CC2", 2.0),
         Box(win, "Back-end PWs", 0.3),
         Box(win, "Back-end HW", 1.2),
         Box(win, "Back-end Final", 1.5)
     ]
 def get_GE_boxes(win : tk.Tk):
     return [
-        Box(win, "Continuum Mechanics CC1", 3.0),
-        Box(win, "Continuum Mechanics CC2", 3.0),
+        Box(win, "Continuum Mech CC1", 3.0),
+        Box(win, "Continuum Mech CC2", 3.0),
         Box(win, "Mineralogy", 2.0),
         Box(win, "Petrography", 2.0),
         Box(win, "Logging", 2.0),
