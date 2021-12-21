@@ -8,7 +8,7 @@ class Box:
 
     def place(self, X : int, Y : int) -> None:
         self.label.place(x = X, y = Y)
-        self.field.place(x = X + 150, y = Y)
+        self.field.place(x = X + 200, y = Y)
     
     def calc(self) -> Grade:
         value : float
