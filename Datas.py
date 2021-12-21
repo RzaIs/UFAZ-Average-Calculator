@@ -46,7 +46,16 @@ def get_CE_boxes(win : tk.Tk):
         Box(win, "Back-end Final", 1.5)
     ]
 def get_GE_boxes(win : tk.Tk):
-    pass
+    return [
+        Box(win, "Continuum Mechanics CC1", 3.0),
+        Box(win, "Continuum Mechanics CC2", 3.0),
+        Box(win, "Mineralogy", 2.0),
+        Box(win, "Petrography", 2.0),
+        Box(win, "Logging", 2.0),
+        Box(win, "Py for Geo CC1", 0.75),
+        Box(win, "Py for Geo CC2", 0.75),
+        Box(win, "Py for Geo Project", 1.5)
+    ]
 
 def get_PE_boxes(win : tk.Tk):
     pass
