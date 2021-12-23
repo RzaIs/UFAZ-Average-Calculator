@@ -40,7 +40,7 @@ def get_CE_boxes(win : tk.Tk):
         Box(win, "Exper chem Report", 1.0),
         Box(win, "Distillation", 2.0),
         Box(win, "Opt on solids CC1", 2.0),
-        Box(win, "Opt on solids CC2", 2.0),
+        Box(win, "Opt on solids Final", 2.0),
         Box(win, "Back-end PWs", 0.3),
         Box(win, "Back-end HW", 1.2),
         Box(win, "Back-end Final", 1.5)

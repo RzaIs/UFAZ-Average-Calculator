@@ -31,9 +31,7 @@ def calculate(boxes : list[Box], output : Output) -> None:
     else:
         average : float = sum_of_grades / sum_of_coeffs
         total : float = sum_of_grades / 20
-        output.write(f"Average: {round(average, 4)}\n")
-        output.write(f"Total: {round(total, 4)}\n")
-        output.write(f"Sum of coeffs: {round(sum_of_coeffs, 4)}\n")
+        output.write(f"Average: {round(average, 4)}\nTotal: {round(total, 4)}\nSum of coeffs: {round(sum_of_coeffs, 4)}\n")
 
 def place_boxes(boxes : list[Box]):
     for index, box in enumerate(boxes):

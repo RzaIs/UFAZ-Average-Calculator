@@ -1,8 +1,8 @@
 import tkinter as tk
 from Box import Box
-from Functions import calculate, render_boxes, reset_boxes
-from Datas import get_GE_boxes, get_PE_boxes, get_common_boxes, get_CS_boxes, get_CE_boxes
 from Output import Output
+from Datas import get_GE_boxes, get_PE_boxes, get_common_boxes, get_CS_boxes, get_CE_boxes
+from Functions import calculate, render_boxes, reset_boxes
 
 win = tk.Tk()
 win.title("Average Calculator")
@@ -31,5 +31,8 @@ GE_btn.place(x = 150, y = 510)
 PE_btn.place(x = 220, y = 510)
 
 output.place(10, 610)
+
+info = tk.Label(master = win, text="For unknown grades put 'n'\n So the program will ignore it.")
+info.place(x = 300, y = 610)
 
 tk.mainloop()
