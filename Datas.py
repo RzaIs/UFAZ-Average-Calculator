@@ -58,4 +58,14 @@ def get_GE_boxes(win : tk.Tk):
     ]
 
 def get_PE_boxes(win : tk.Tk):
-    return [] # should be completed
+    return [
+        Box(win, "O&G field dev",3.0),
+        Box(win, "Intercult Managment",2.0),
+        Box(win, "Mineralogy", 2.0),
+        Box(win, "Petrography", 2.0),
+        Box(win, "Logging", 2.0),
+        Box(win, "Organic CC1",0.75),
+        Box(win, "Organic Final",1.25),
+        Box(win, "Exper chem PW", 1.0),
+        Box(win, "Exper chem Report", 1.0)
+    ]

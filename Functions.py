@@ -16,18 +16,18 @@ def sum_grades(grades : list[Grade]) -> float:
         sum_of_grades += grade.grade
     return sum_of_grades
 
-def calculate(boxes : list[Box], output : Output) -> float:
+def calculate(boxes : list[Box], output : Output) -> None:
     grades = []
     for box in boxes:
         grade = box.calc()
         grades.append(grade)
         if grade == None:
             output.write("please enter the grades correctly")
+            return
     sum_of_coeffs : float = sum_coeffs(grades)
     sum_of_grades : float = sum_grades(grades)
     if sum_of_coeffs == 0:
         output.write("0\n0")
-        
     else:
         average : float = sum_of_grades / sum_of_coeffs
         total : float = sum_of_grades / 20

@@ -14,7 +14,7 @@ common_boxes = get_common_boxes(win)
 CS_boxes = get_CS_boxes(win)
 CE_boxes = get_CE_boxes(win)
 GE_boxes = get_GE_boxes(win)
-PE_boxes = get_PE_boxes(win) # should be completed
+PE_boxes = get_PE_boxes(win)
 boxes : list[Box] = []
 
 Calc_btn = tk.Button(master = win, text="Calculate", command = lambda : calculate(boxes, output))
@@ -28,7 +28,7 @@ PE_btn = tk.Button(master = win, text = "PE", command = lambda : render_boxes(bo
 CS_btn.place(x = 10, y = 510)
 CE_btn.place(x = 80, y = 510)
 GE_btn.place(x = 150, y = 510)
-#PE_btn.place(x = 220, y = 510) # should be completed
+PE_btn.place(x = 220, y = 510)
 
 output.place(10, 610)
 
