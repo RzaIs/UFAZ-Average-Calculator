@@ -58,4 +58,4 @@ def get_GE_boxes(win : tk.Tk):
     ]
 
 def get_PE_boxes(win : tk.Tk):
-    pass
+    return [] # should be completed
