@@ -1,7 +1,7 @@
 import tkinter as tk
 class Output:
     def __init__(self,  win : tk.Tk) -> None:
-        self.field = tk.Text(master = win, width = 23, height = 3)
+        self.field = tk.Text(master = win, width = 33, height = 3)
 
     def place(self, X : int, Y : int) -> None:
         self.field.place(x = X, y = Y)

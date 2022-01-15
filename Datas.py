@@ -1,9 +1,9 @@
 import tkinter as tk
 from Box import Box
 
-def get_common_boxes(win : tk.Tk):
+def get_common_boxes(win : tk.Tk) -> list[Box]:
     return [
-        Box(win, "Math CC1(copybook)", 1),
+        Box(win, "Math CC1(copybook)", 1.0),
         Box(win, "Math CC2(midterm)", 1.5),
         Box(win, "Math Final", 2.5),
         Box(win, "Electricity CC1", 0.5),
@@ -14,7 +14,7 @@ def get_common_boxes(win : tk.Tk):
         Box(win, "Management CC1", 1.0),
         Box(win, "Management Final", 1.0)
     ]
-def get_CS_boxes(win : tk.Tk):
+def get_CS_boxes(win : tk.Tk) -> list[Box]:
     return [
         Box(win, "Signal P. CC1", 0.3),
         Box(win, "Signal P. CC2", 1.5),
@@ -30,7 +30,7 @@ def get_CS_boxes(win : tk.Tk):
         Box(win, "Back-end Final", 1.5)
     ]
 
-def get_CE_boxes(win : tk.Tk):
+def get_CE_boxes(win : tk.Tk) -> list[Box]:
     return [
         Box(win, "Chemical React CC1", 0.75),
         Box(win, "Chemical React CC2", 1.25),
@@ -45,7 +45,7 @@ def get_CE_boxes(win : tk.Tk):
         Box(win, "Back-end HW", 1.2),
         Box(win, "Back-end Final", 1.5)
     ]
-def get_GE_boxes(win : tk.Tk):
+def get_GE_boxes(win : tk.Tk) -> list[Box]:
     return [
         Box(win, "Continuum Mech CC1", 3.0),
         Box(win, "Continuum Mech CC2", 3.0),
@@ -57,7 +57,7 @@ def get_GE_boxes(win : tk.Tk):
         Box(win, "Py for Geo Project", 1.5)
     ]
 
-def get_PE_boxes(win : tk.Tk):
+def get_PE_boxes(win : tk.Tk) -> list[Box]:
     return [
         Box(win, "O&G field dev",3.0),
         Box(win, "Intercult Managment",2.0),
@@ -68,4 +68,14 @@ def get_PE_boxes(win : tk.Tk):
         Box(win, "Organic Final",1.25),
         Box(win, "Exper chem PW", 1.0),
         Box(win, "Exper chem Report", 1.0)
+    ]
+
+def get_headers(win : tk.Tk) -> list[tk.Label]:
+    return [
+        tk.Label(master = win, text="subject name"),
+        tk.Label(master = win, text="grade"),
+        tk.Label(master = win, text="coeff"),
+        tk.Label(master = win, text="subject name"),
+        tk.Label(master = win, text="grade"),
+        tk.Label(master = win, text="coeff")
     ]

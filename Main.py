@@ -1,14 +1,16 @@
 import tkinter as tk
 from Box import Box
 from Output import Output
-from Datas import get_GE_boxes, get_PE_boxes, get_common_boxes, get_CS_boxes, get_CE_boxes
-from Functions import calculate, render_boxes, reset_boxes
+from Datas import get_GE_boxes, get_PE_boxes, get_common_boxes, get_CS_boxes, get_CE_boxes, get_headers
+from Functions import calculate, render_boxes, reset_boxes, render_headers
 
 win = tk.Tk()
 win.title("Average Calculator")
-win.geometry("630x690")
+win.geometry("830x740")
 
 output = Output(win)
+
+headers : list[tk.Label] = get_headers(win)
 
 common_boxes = get_common_boxes(win)
 CS_boxes = get_CS_boxes(win)
@@ -25,14 +27,16 @@ CE_btn = tk.Button(master = win, text = "CE", command = lambda : render_boxes(bo
 GE_btn = tk.Button(master = win, text = "GE", command = lambda : render_boxes(boxes, common_boxes, GE_boxes, Calc_btn, Reset_btn))
 PE_btn = tk.Button(master = win, text = "PE", command = lambda : render_boxes(boxes, common_boxes, PE_boxes, Calc_btn, Reset_btn))
 
-CS_btn.place(x = 10, y = 510)
-CE_btn.place(x = 80, y = 510)
-GE_btn.place(x = 150, y = 510)
-PE_btn.place(x = 220, y = 510)
+CS_btn.place(x = 10, y = 560)
+CE_btn.place(x = 80, y = 560)
+GE_btn.place(x = 150, y = 560)
+PE_btn.place(x = 220, y = 560)
 
-output.place(10, 610)
+output.place(10, 660)
+
+render_headers(headers)
 
 info = tk.Label(master = win, text="For unknown grades put 'n'\n So the program will ignore it.")
-info.place(x = 300, y = 610)
+info.place(x = 420, y = 660)
 
 tk.mainloop()
