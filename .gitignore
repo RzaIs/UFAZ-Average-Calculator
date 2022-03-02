@@ -1,5 +1,5 @@
-__pycache__/*
-build/*
-dist/*
+__pycache__/
+build/
+dist/
 .DS_Store
 Main.spec
